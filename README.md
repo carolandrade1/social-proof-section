@@ -1,34 +1,95 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Mentor - Social proof section solution
 
-## Getting Started
+This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-First, run the development server:
+## Table of contents
 
-```bash
-npm run dev
-# or
-yarn dev
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Installation](#installation)
+- [Author](#author)
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for the section depending on their device's screen size
+
+### Screenshot
+
+<img width='800px' src='public/image/Screenshot.png'/>
+
+## My process
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+- [Tailwind](https://tailwindcss.com/) - For styles
+
+### What I learned
+In this project I use tailwind for style, so sometimes when I create a react component, I have to add some classes to the default style and this is the best way that I find to do that.
+
+For example, I create a Card component that needs different margins depending on where it is placed, so I add a className props, that receives the additional style.
+
+```js
+export default function Card({ srcPhoto, title, description, className }) {
+  return (
+    <article
+      className={`max-h-[248px] min-w-[327px] rounded-md bg-vd-magenta p-8 text-[14px] sm:max-h-[234px] ${className}`}
+    >
+      <div className='mb-7 flex space-x-4'>
+        <img
+          src={srcPhoto}
+          alt='Profile photo'
+          loading='lazy'
+          className='h-10 w-10 rounded-full'
+        />
+        <div>
+          <header className='font-bold text-white'>{title}</header>
+          <span className='text-s-pink'>Verified Buyer</span>
+        </div>
+      </div>
+      <p className='font-medium text-white'>{description}</p>
+    </article>
+  );
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Continued development
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+I tried to create the background using svg image, but I found it harder than it looks to manipulate them. So I intend to see and study better how this would work for a future project.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Installation
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. Clone repository
+```
+git clone https://github.com/carolandrade1/social-proof-section.git && cd social-proof-section
+```
 
-## Learn More
+2. Install dependencies
+```
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+3. Run application
+```
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Go to http://localhost:3000/
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Author
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Website - [carolandrade.dev](https://www.carolandrade.dev/)
+- Frontend Mentor - [@carolandrades1](https://www.frontendmentor.io/profile/carolandrade1)
