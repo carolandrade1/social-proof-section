@@ -16,8 +16,8 @@ export default function GroupCards() {
       />
       <Card
         srcPhoto='/image/image-anne.jpg'
-        title='Irene Roberts'
-        description='"Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."'
+        title='Anne Wallace'
+        description='"Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!"'
         className='lg:translate-y-8'
       />
     </section>

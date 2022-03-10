@@ -7,11 +7,10 @@ export default function Card({ srcPhoto, title, description, className }) {
         <img
           src={srcPhoto}
           alt='Profile photo'
-          loading='lazy'
           className='h-10 w-10 rounded-full'
         />
         <div>
-          <header className='font-bold text-white'>{title}</header>
+          <h2 className='font-bold text-white'>{title}</h2>
           <span className='text-s-pink'>Verified Buyer</span>
         </div>
       </div>
