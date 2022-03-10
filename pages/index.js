@@ -2,10 +2,12 @@ import Background from '../src/components/background';
 import Footer from '../src/components/footer';
 import GroupCards from '../src/components/groupCards';
 import GroupRating from '../src/components/groupRating';
+import IndexHead from '../src/components/head';
 
 export default function Home() {
   return (
     <div className='relative grid min-h-[100vh] w-screen place-content-center font-sans lg:h-screen'>
+      <IndexHead />
       <Background />
       <div className='w-full p-5 pt-[80px] sm:max-w-[1110px] lg:p-1'>
         <section className='mb-12 flex flex-col justify-center md:flex-row md:space-x-1 lg:mb-10'>
