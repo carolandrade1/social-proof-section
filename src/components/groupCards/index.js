@@ -1,8 +1,8 @@
-import Card from "../card";
+import Card from '../card';
 
 export default function GroupCards() {
   return (
-    <section className='lg:max-h[265px] flex flex-col space-y-6 lg:flex-row lg:space-x-7 lg:space-y-0'>
+    <div className='lg:max-h[265px] flex flex-col space-y-6 lg:flex-row lg:space-x-7 lg:space-y-0'>
       <Card
         srcPhoto='image/image-colton.jpg'
         title='Colton Smith'
@@ -20,6 +20,6 @@ export default function GroupCards() {
         description='"Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!"'
         className='lg:translate-y-8'
       />
-    </section>
+    </div>
   );
 }

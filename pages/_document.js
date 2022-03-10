@@ -13,7 +13,6 @@ export default function Document() {
         <meta name='description' content='Google Clone made with next' />
         <link rel='icon' href='/image/favicon-32x32.png' />
 
-        <meta name='description' content={description} />
         <meta name='author' content='Carol Andrade Santos' />
         <meta name='keywords' content='Next.js, React, Tailwind' />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
